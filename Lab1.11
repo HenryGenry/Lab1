@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	unsigned long long minUncut;
+	cin >> minUncut;
+	cin.get();
+	int hours = (minUncut / 60) % 24;
+	int minutes = minUncut % 60;
+	cout << hours <<" " << minutes;
+	cin.get();
+	return 0;
+}
+
+

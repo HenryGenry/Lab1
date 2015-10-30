@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int dph = 30;
+	
+	
+	cout << "set seconds\n";
+	int secUncut;
+	cin >> secUncut;
+	cin.get();
+	cout << "set minutes\n";
+	int minUncut;
+	cin >> minUncut;
+	cin.get();
+	cout << "set hours\n";
+	int hourUncut;
+	cin >> hourUncut;
+	cin.get();
+
+	double totalHour = hourUncut % 24 + (double(minUncut % 60) / 60) +(double(secUncut % 60) / 360);
+
+	cout << totalHour <<"hours\n";
+	int degrees = int(totalHour*dph);
+	if (degrees > 360) degrees %= 360;
+	if (degrees > 180) degrees= 180-(degrees % 180);
+	cout << degrees << "\n";
+	cin.get();
+
+
+	cin.get();
+	return 0;
+}

@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	cout << "input x\n";
+	cin >> x;
+	cin.get();
+	int sum = (x / 100) + ((x / 10) % 10) + x % 10;
+	cout << "Sum of digits = " << sum;
+	cin.get();
+
+	return 0;
+}

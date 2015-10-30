@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x;
+	cout << "input x\n";
+	cin >> x;
+	cin.get();
+	x /= 10;
+	if (x < 0) x *= -1;
+	cout << "Tens of x - " << x;
+	cin.get();
+	return 0;
+}
